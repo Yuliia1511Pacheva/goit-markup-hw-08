@@ -1,0 +1,48 @@
+.site-nav {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.site-nav__link {
+    color: var(--primary-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: var(--cubic);
+
+    &--current {
+            position: relative;
+            color: var(--accent-color);
+
+        &::after {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                display: block;
+                content: "";
+                height: 4px;
+                width: 100%;
+                background-color: var(--accent-color);
+                border-radius: 2px;
+            }
+        }
+
+    &:hover,
+    &:focus {
+            color: var(--accent-color);
+            fill: var(--accent-color);
+        }
+}
+
+
+

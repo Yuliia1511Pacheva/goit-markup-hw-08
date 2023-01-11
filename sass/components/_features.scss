@@ -1,0 +1,78 @@
+.features-list {
+    @media and screen (min-width: $tablet) {
+        display: flex;
+        justify-content: center;
+    }
+}
+ 
+ .features-list__item {
+    @media and screen (min-width: $tablet) {
+           width: 50%;
+        }
+ }
+    
+
+
+.features-list__item:not(:last-child) {
+    margin-bottom: 30px;
+    }
+
+
+.features-list__container {
+    display: flex;
+    max-width: 100%;
+    height: 120px;
+    background-color: #F5F4FA;
+    margin-bottom: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.features-list__icon {
+    width: 70px;
+    height: 70px;
+}
+
+.features-list__name {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    margin-bottom: 10px;
+}
+
+.features-list__text {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--text-color);
+    max-width: 100%;
+}
+
+/* АЛЬТЕРНАТИВНИЙ СПОСІБ ДОДАВАННЯ SVG ЧЕРЕЗ ПСЕВДОЕЛЕМЕНТИ */
+/* .features-item::before {
+    content: ""; 
+    height: 120px;
+    width: 270px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.details::before {
+    background-image: url(../images/svg/antenna\ 1.svg);
+}
+
+.timing::before {
+    background-image: url(../images/Features2.png);
+}
+
+.plans::before {
+    background-image: url(../images/Features3.png);
+}
+.technology::before {
+    background-image: url(../images/Features4.png); */

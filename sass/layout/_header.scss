@@ -1,0 +1,19 @@
+.header {
+    border-bottom: 1px solid #ECECEC;
+    padding: 16px;
+}
+
+.header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu-button {
+border: none;
+background-color: transparent;
+}
+
+// .header__logo {
+//     margin-right: 93px;
+// }

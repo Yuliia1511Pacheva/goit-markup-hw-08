@@ -1,0 +1,40 @@
+.subscription-form {
+    margin-left: auto;
+    margin-right: auto;
+}
+.subscription-form__call {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--primary-white-color);
+
+    text-align: center;
+    margin-bottom: 20px;
+}
+.subscription-form__input {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    background-color: #2F303A;
+    
+    display: block;
+    padding: 16px;
+    margin-bottom: 20px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    transition: border-color 250ms var(--cubic);
+
+
+    &:focus {
+            outline: none;
+            border-color: var(--accent-color);
+        }
+}
+
+.subscription-form__icon {
+    max-width: 24px;
+    height: 24px; 
+    margin-left: 10px;
+}

@@ -1,0 +1,14 @@
+.section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+
+    &--no-padding {
+        padding-top: 0;
+    }
+
+    &--color-grey {
+        background-color: #F5F4FA;
+    }
+}
+

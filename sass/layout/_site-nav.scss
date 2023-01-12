@@ -2,6 +2,10 @@
     display: flex;
     align-items: center;
     gap: 50px;
+
+    @media screen and (max-width: $tablet) {
+            display: none;
+        }
 }
 
 .site-nav__link {

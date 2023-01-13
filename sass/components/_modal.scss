@@ -4,7 +4,8 @@
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
 
-    min-width: 528px;
+    max-width: 528px;
+    width: 100%;
     min-height: 521px;
     padding: 40px;
     background-color: #ffffff;

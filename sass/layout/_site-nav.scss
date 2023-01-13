@@ -1,10 +1,11 @@
 .site-nav {
-    display: flex;
-    align-items: center;
-    gap: 50px;
+    display: none;
 
-    @media screen and (max-width: $tablet) {
-            display: none;
+    @media screen and (min-width: $tablet) {
+          
+            display: flex;
+            align-items: center;
+            gap: 50px;
         }
 }
 

@@ -1,7 +1,14 @@
-// .team-list {
-//     display: flex;
-//     justify-content: space-between;
-// }
+.team-list {
+    @media screen and (min-width: $tablet) {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+   
+    @media screen and (min-width: $desktop) {
+        flex-wrap: nowrap;
+    }
+}
 
 .team-list__item {
     border-radius: 0px 0px 4px 4px;
@@ -12,5 +19,13 @@
 
     &:not(:last-child) {
         margin-bottom: 30px;
+
+        @media screen and (min-width: $tablet) {
+                margin-bottom: 0;;
+            }
+    }
+
+    @media screen and (min-width: $tablet){
+        flex-basis: calc((100% - 30px) / 2);
     }
 }

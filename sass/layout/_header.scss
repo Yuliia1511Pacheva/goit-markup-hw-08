@@ -11,11 +11,16 @@
     min-height: 60px;
 }
 
-.menu-button {
-    display: inline-flex;
+.header__burger {
+    display: block;
     border: none;
     background-color: transparent;
     padding: 0;
+    margin-left: auto;
+
+    @media screen and (min-width: $tablet) {
+        display: none;
+    }
 }
 .menu-container{
     position: absolute;
@@ -35,6 +40,9 @@
 }
 
 
-// .header__logo {
-//     margin-right: 93px;
-// } 
+.header__logo {
+    @media screen and (min-width: $desktop) {
+        margin-right: 93px;
+    }
+    
+} 

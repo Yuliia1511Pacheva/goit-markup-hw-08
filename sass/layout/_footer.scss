@@ -4,11 +4,25 @@
     padding-bottom: 60px;
 }
 
+.footer__address-box {
+    display: block;
+    text-align: center;
+
+    @media screen and (min-width: $desktop) {
+        text-align: start;
+        margin-right: 70px;
+    }
+}
+
 .footer__social {
     // display: flex;
     // margin-left: 70px;
     // justify-content: space-between;
     margin-bottom: 60px;
+
+    @media screen and (min-width: $tablet) {
+        margin-bottom: 0;
+    }
 }
 
 .footer__call {
@@ -22,10 +36,16 @@
     margin-bottom: 20px;
 }
 
-.footer__logo {
-  text-align: center;
+.footer__flex-container {
+    @media screen and (min-width: $tablet) {
+        display: flex;
+        justify-content: space-around;
+        align-items: baseline;
+    }
 }
-
-// .footer__container {
-//     display: flex;
-// }
+.footer__container {
+    @media screen and (min-width: $desktop) {
+            display: flex;
+        }
+   
+}

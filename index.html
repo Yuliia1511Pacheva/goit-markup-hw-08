@@ -24,19 +24,48 @@
 
     <div class="container">
         <div class="header__container">
-            <a class="logo" lang="en" href="./index.html">Web<span class="logo__part">Studio</span></a>
+            <a class="logo header__logo" lang="en" href="./index.html">Web<span class="logo__part">Studio</span></a>
 
-            <button class="menu-button js-close-menu"  type="button">
+            <button class="header__burger js-open-menu"  type="button">
                 <svg width="40" height="40" aria-label="Перемикач мобільного меню">
                     <use class="menu-button__icon-burger" href="/images/icon.svg#icon-menu_burger"></use>
                 </svg>
             </button>
 
+            <nav>
+                <ul class="site-nav">
+            
+                    <li> <a class="site-nav__link site-nav__link--current" href="./index.html">Студія</a> </li>
+                    <li> <a class="site-nav__link" href="./portfolio.html">Портфоліо</a> </li>
+                    <li> <a class="site-nav__link" href="">Контакти</a> </li>
+            
+                </ul>
+            </nav>
+            
+            <ul class="site-contacts">
+            
+                <li>
+                    <a class="site-contacts__link" lang="en" href="mailto:info@devstudio.com">
+                        <svg class="site-contacts__icon" width="16" height="12">
+                            <use href="./images/icon.svg#envelope"></use>
+                        </svg>
+                        info@devstudio.com</a>
+                </li>
+                <li>
+                    <a class="site-contacts__link" href="tel:+380961111111">
+                        <svg class="site-contacts__icon" width="10" height="16">
+                            <use href="./images/icon.svg#smartphone"></use>
+                        </svg>
+                        +380961111111</a>
+                </li>
+            
+            </ul>
+
         </div>
 
-    <div class="menu-container js-menu-container is-open">
+    <!-- <div class="menu-container js-menu-container is-open">
 
-        <button class="menu-button js-open-menu" type="button">
+        <button class="menu-button js-close-menu" type="button">
             <svg width="40" height="40" aria-label="Перемикач мобільного меню">
                 <use class="menu-button__icon-cross" href="/images/icon.svg#icon-close_mobile-menu"></use>
             </svg>
@@ -57,37 +86,7 @@
 
         </div>
           
-    </div>
-
-
-    <nav>
-        <ul class="site-nav">
-    
-            <li> <a class="site-nav__link site-nav__link--current" href="./index.html">Студія</a> </li>
-            <li> <a class="site-nav__link" href="./portfolio.html">Портфоліо</a> </li>
-            <li> <a class="site-nav__link" href="">Контакти</a> </li>
-    
-        </ul>
-    </nav>
-    
-    <ul class="site-contacts">
-    
-        <li>
-            <a class="site-contacts__link" lang="en" href="mailto:info@devstudio.com">
-                <svg class="site-contacts__icon" width="16" height="12">
-                    <use href="./images/icon.svg#envelope"></use>
-                </svg>
-                info@devstudio.com</a>
-        </li>
-        <li>
-            <a class="site-contacts__link" href="tel:+380961111111">
-                <svg class="site-contacts__icon" width="10" height="16">
-                    <use href="./images/icon.svg#smartphone"></use>
-                </svg>
-                +380961111111</a>
-        </li>
-    
-    </ul>
+    </div> -->
 
     </div>
 </header>
@@ -162,7 +161,7 @@
 
   
     <!-- EXAMPLE -->
-    <!-- <section class="section section--no-padding">
+    <section class="section section--no-padding">
 
         <div class="container">
 
@@ -196,7 +195,7 @@
 
         </div>
 
-    </section> -->
+    </section>
 
 
 <!-- TEAM -->
@@ -423,8 +422,9 @@
 <footer class="footer">
     <div class="container">
       <div class="footer__container">
-        <div>
-         <a class="logo footer__logo" lang="en" href="./index.html">Web<span class="logo__part--white">Studio</span></a>
+        <div class="footer__flex-container">
+        <div class="footer__address-box">
+         <a class="logo" lang="en" href="./index.html">Web<span class="logo__part--white">Studio</span></a>
 
           <address class="address">
             <ul class="address__list">
@@ -470,6 +470,7 @@
                </ul>
              </div>
 
+        </div>
         </div>
 
         <form class="subscription-form">

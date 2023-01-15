@@ -18,7 +18,7 @@
 .mobile-container {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     height: 100%;
 }
 .mobile-menu__close {
@@ -39,7 +39,7 @@
    }
 }
 .mobile-nav {
-    margin-bottom: 306px;
+    margin-bottom: 302px;
 }
 .mobile-nav__link {
     font-weight: 500;

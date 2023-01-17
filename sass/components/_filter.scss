@@ -1,7 +1,12 @@
 .filter {
     margin-bottom: 50px;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+
+    @media screen and (min-width: $tablet) {
+        justify-content: center;
+    }
 }
 
 .filter_button {
@@ -16,6 +21,7 @@
     border-radius: 4px;
     border: 0;
     padding: 6px 22px;
+    margin-bottom: 15px;
 
     transition-property: color, box-shadow, background-color;
     transition-duration: 250ms;

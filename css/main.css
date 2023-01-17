@@ -781,17 +781,13 @@ body {
 }
 
 .card__meta {
-  width: 370px;
+  width: 100%;
   border-bottom: 1px solid #EEEEEE;
   border-right: 1px solid #EEEEEE;
   border-left: 1px solid #EEEEEE;
   padding-left: 24px;
   padding-bottom: 20px;
   padding-top: 20px;
-}
-
-.card__picture {
-  display: block;
 }
 
 .card__thumb {
@@ -1113,9 +1109,18 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+@media screen and (min-width: 768px) {
+  .filter {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .filter_button {
@@ -1129,6 +1134,7 @@ body {
   border-radius: 4px;
   border: 0;
   padding: 6px 22px;
+  margin-bottom: 15px;
   -webkit-transition-property: color, background-color, -webkit-box-shadow;
   transition-property: color, background-color, -webkit-box-shadow;
   transition-property: color, box-shadow, background-color;
@@ -1375,10 +1381,6 @@ body {
   fill: var(--accent-color);
 }
 
-.mobile-nav {
-  margin-bottom: 302px;
-}
-
 .mobile-nav__link {
   font-weight: 500;
   font-size: 40px;
@@ -1399,10 +1401,6 @@ body {
 .mobile-nav__item:not(:last-child),
 .mobile-contacts__item:not(:last-child) {
   margin-bottom: 32px;
-}
-
-.mobile-contacts {
-  margin-bottom: 64px;
 }
 
 .mobile-contacts__tel {
@@ -1456,15 +1454,35 @@ body {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 30px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+@media screen and (min-width: 768px) {
+  .projects {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
 }
 
 .projects__item {
-  -ms-flex-preferred-size: calc((100% - 60px) / 3);
-      flex-basis: calc((100% - 60px) / 3);
   -webkit-transition: -webkit-box-shadow 250ms var(--cubic);
   transition: -webkit-box-shadow 250ms var(--cubic);
   transition: box-shadow 250ms var(--cubic);
   transition: box-shadow 250ms var(--cubic), -webkit-box-shadow 250ms var(--cubic);
+}
+@media screen and (min-width: 768px) {
+  .projects__item {
+    -ms-flex-preferred-size: calc((100% - 30px) / 2);
+        flex-basis: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .projects__item {
+    -ms-flex-preferred-size: calc((100% - 60px) / 3);
+        flex-basis: calc((100% - 60px) / 3);
+  }
 }
 .projects__item:hover {
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);

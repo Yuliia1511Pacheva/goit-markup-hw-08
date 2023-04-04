@@ -64,16 +64,16 @@
 
         <h1 class="visually-hidden">Проекти</h1> <!--Зробити невидимим-->
 
-<ul class="filter">
-    <li class="filter_item"> <button class="filter_button" type="button">Усі</button></li>
-    <li class="filter_item"> <button class="filter_button" type="button">Веб-сайти</button></li>
-    <li class="filter_item"> <button class="filter_button" type="button">Додатки</button></li>
-    <li class="filter_item"> <button class="filter_button" type="button">Дизайн</button></li>
-    <li class="filter_item"> <button class="filter_button" type="button">Маркетинг</button></li>
+<ul class="filter js-filter-container">
+    <li class="filter_item"> <button class="filter_button js-button" type="button" data-type="all">Усі</button></li>
+    <li class="filter_item"> <button class="filter_button js-button" type="button" data-type="web">Веб-сайти</button></li>
+    <li class="filter_item"> <button class="filter_button js-button" type="button" data-type="app">Додатки</button></li>
+    <li class="filter_item"> <button class="filter_button js-button" type="button" data-type="design">Дизайн</button></li>
+    <li class="filter_item"> <button class="filter_button js-button" type="button" data-type="marketing">Маркетинг</button></li>
 </ul>
 
 <ul class="projects">
-    <li class="projects__item"> 
+    <li class="projects__item js-item" data-type="web"> 
 
         <article class="card">
             <a class="card__link" href="">
@@ -92,7 +92,7 @@
         
     </li>
 
-    <li class="projects__item">
+    <li class="projects__item js-item" data-type="design">
 
         <article class="card">
             <a class="card__link" href="">
@@ -111,7 +111,7 @@
         
     </li>
 
-    <li class="projects__item"> 
+    <li class="projects__item js-item" data-type="app"> 
 
         <article class="card">
             <a class="card__link" href="">
@@ -130,7 +130,7 @@
        
     </li>
 
-    <li class="projects__item"> 
+    <li class="projects__item js-item" data-type="marketing"> 
 
         <article class="card">
             <a class="card__link" href="">
@@ -150,7 +150,7 @@
        
     </li>
 
-    <li class="projects__item"> 
+    <li class="projects__item js-item" data-type="app"> 
 
         <article class="card">
             <a class="card__link" href="">
@@ -170,7 +170,7 @@
        
     </li>
 
-    <li class="projects__item"> 
+    <li class="projects__item js-item" data-type="web"> 
 
         <article class="card">
             <a class="card__link" href="">
@@ -188,7 +188,7 @@
         
     </li>
 
-    <li class="projects__item"> 
+    <li class="projects__item js-item" data-type="design"> 
 
         <article class="card">
             <a class="card__link" href="">
@@ -206,7 +206,7 @@
         
     </li>
 
-    <li class="projects__item"> 
+    <li class="projects__item js-item" data-type="marketing"> 
 
         <article class="card">
             <a class="card__link" href="">
@@ -225,7 +225,7 @@
        
     </li>
 
-    <li class="projects__item"> 
+    <li class="projects__item js-item" data-type="app"> 
 
         <article class="card">
             <a class="card__link" href="">
@@ -361,7 +361,7 @@
     </div>
 
 </div>
-<script src="./js/mobile-menu.js"></script>
-
+<script type="module" src="./js/mobile-menu.js"></script>
+<script type = "module" src="./js/button-filter.js"></script>
 </body>
 </html>

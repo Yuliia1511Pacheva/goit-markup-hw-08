@@ -1,11 +1,6 @@
-const buttonEl = document.querySelector('.js-button');
 const buttonContainer = document.querySelector('.js-filter-container');
-
-const imgEl = document.querySelector('.js-item');
 const cards = document.querySelectorAll('.js-item');
 
-
-console.log(imgEl.dataset.type);
 buttonContainer.addEventListener('click', onFilterButtonClick);
 
 function onFilterButtonClick(evt) {
